@@ -18,17 +18,17 @@ const BottomTabNavigation = () => {
         }}
       />
       <Tab.Screen
-        name="Order"
+        name="Saved"
         component={common.Order}
         options={{
-          tabBarLabel: 'Order',
+          tabBarLabel: 'Saved',
         }}
       />
       <Tab.Screen
-        name="MyList"
-        component={common.MyList}
+        name="Notifications"
+        component={common.Favorite}
         options={{
-          tabBarLabel: 'My List',
+          tabBarLabel: 'Notifications',
         }}
       />
       <Tab.Screen

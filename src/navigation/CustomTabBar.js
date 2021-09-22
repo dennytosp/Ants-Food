@@ -16,6 +16,7 @@ const CustomTabBar = ({state, descriptors, navigation}) => {
         backgroundColor: '#fff',
         paddingBottom: Platform.OS === 'ios' ? bottom : 10,
         paddingTop: 10,
+        // paddingHorizontal: 25,
       }}>
       {state.routes.map((route, index) => {
         const {options} = descriptors[route.key];
@@ -31,18 +32,18 @@ const CustomTabBar = ({state, descriptors, navigation}) => {
           index === 0
             ? icons.home
             : index === 1
-            ? icons.product
+            ? icons.market
             : index === 2
-            ? icons.favorite
-            : icons.profile;
+            ? icons.bell
+            : icons.person;
         const iconselect =
           index === 0
-            ? icons.home
+            ? icons.homeClick
             : index === 1
-            ? icons.product
+            ? icons.marketClick
             : index === 2
-            ? icons.favorite
-            : icons.profile;
+            ? icons.bellClick
+            : icons.personClick;
         const onPress = () => {
           const event = navigation.emit({
             type: 'tabPress',
@@ -71,7 +72,7 @@ const CustomTabBar = ({state, descriptors, navigation}) => {
             onPress={onPress}
             onLongPress={onLongPress}
             style={styles.btn}>
-            {index === 3 && (
+            {index === 2 && (
               <Badge
                 status="error"
                 containerStyle={styles.containerStyle}
@@ -95,7 +96,7 @@ export default CustomTabBar;
 const styles = StyleSheet.create({
   btn: {flex: 1, alignItems: 'center'},
   textlabel: isFocused => ({
-    color: isFocused ? COLORS.primary : COLORS.black,
+    color: isFocused ? COLORS.black : COLORS.gray04,
     marginTop: 5,
     fontSize: 10,
   }),
@@ -103,7 +104,7 @@ const styles = StyleSheet.create({
     width: getSize.s(20),
     height: getSize.s(20),
     resizeMode: 'contain',
-    tintColor: isFocused ? COLORS.primary : COLORS.black,
+    tintColor: isFocused ? COLORS.black : COLORS.gray04,
   }),
   containerStyle: {
     position: 'absolute',

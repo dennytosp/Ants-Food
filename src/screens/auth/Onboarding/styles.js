@@ -6,31 +6,32 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: COLORS.white,
+    backgroundColor: COLORS.black,
   },
   image: {
-    marginVertical: 60,
+    marginVertical: 30,
   },
   title: {
     fontSize: 24,
-    color: COLORS.dark,
+    fontWeight: '700',
+    color: COLORS.white,
+    lineHeight: 36,
     textAlign: 'center',
-    fontFamily: 'OpenSans-Bold',
     marginHorizontal: 60,
   },
   text: {
     fontSize: 14,
-    color: COLORS.gray04,
+    color: COLORS.white,
     textAlign: 'center',
-    fontFamily: 'OpenSans-SemiBold',
     marginHorizontal: 60,
     marginTop: 20,
+    lineHeight: 16.41,
   },
   dotStyle: {
-    backgroundColor: COLORS.blueFaded,
+    backgroundColor: COLORS.black,
   },
   activeDotStyle: {
-    backgroundColor: COLORS.blueOnboard,
+    backgroundColor: COLORS.white,
   },
   rightTextWrapper: {
     width: 40,
@@ -41,8 +42,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   rightText: {
-    color: COLORS.blueOnboard,
-    fontFamily: 'OpenSans-SemiBold',
+    color: COLORS.white,
     fontSize: 14,
   },
   leftTextWrapper: {
@@ -54,8 +54,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   leftText: {
-    color: COLORS.blueOnboard,
-    fontFamily: 'OpenSans-SemiBold',
+    color: COLORS.white,
     fontSize: 14,
   },
   doneButtonWrapper: {
@@ -68,9 +67,8 @@ const styles = StyleSheet.create({
   },
   doneButtonText: {
     fontSize: 14,
-    fontFamily: 'OpenSans-SemiBold',
     textAlign: 'center',
-    color: COLORS.white,
+    color: COLORS.black,
   },
 });
 

@@ -3,19 +3,24 @@ import {photos} from '../../assets';
 
 export const ONBOARD_DATA = [
   {
-    title: 'Save time by tracking your studies',
-    text: 'Schedule your classes, assignments, quizzes and more',
-    image: photos.onboard1,
+    title: 'Delicious Food',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    image: photos.onb01,
   },
   {
-    title: 'Stay on top of your education',
-    text: 'Reduce your stress, increase your productivity',
-    image: photos.onboard2,
+    title: 'Fast Shipping',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum rhoncus nulla.',
+    image: photos.onb02,
   },
   {
-    title: 'Spend more time doing the things you love',
-    text: 'Get started within five minutes',
-    image: photos.onboard3,
+    title: 'Certificate Food',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies mauris a id.',
+    image: photos.onb03,
+  },
+  {
+    title: 'Payment Online',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui ultricies sit massa.',
+    image: photos.onb04,
   },
 ];
 

@@ -45,7 +45,7 @@ const MainStackNavigator = () => {
   } else if (isFirstLaunch == true) {
     routeName = 'Onboard';
   } else {
-    routeName = 'Common';
+    routeName = 'Welcome';
   }
 
   return (
@@ -60,11 +60,14 @@ const MainStackNavigator = () => {
         screenOptions={{headerShown: false}}>
         <>
           <Stack.Screen name="Onboard" component={authen.Onboard} />
+          <Stack.Screen name="Welcome" component={authen.Welcome} />
+          <Stack.Screen name="Register" component={authen.Register} />
+          <Stack.Screen name="Login" component={authen.Login} />
 
           <Stack.Screen name="Common" component={StackStep.TabNavigation} />
           <Stack.Screen name="Home" component={common.Home} />
-          <Stack.Screen name="Order" component={common.Order} />
-          <Stack.Screen name="MyList" component={common.MyList} />
+          <Stack.Screen name="Saved" component={common.Saved} />
+          <Stack.Screen name="Notifications" component={common.Notifications} />
           <Stack.Screen name="Profile" component={common.Profile} />
         </>
       </Stack.Navigator>
