@@ -19,14 +19,14 @@ const BottomTabNavigation = () => {
       />
       <Tab.Screen
         name="Saved"
-        component={common.Order}
+        component={common.Saved}
         options={{
           tabBarLabel: 'Saved',
         }}
       />
       <Tab.Screen
         name="Notifications"
-        component={common.Favorite}
+        component={common.Notifications}
         options={{
           tabBarLabel: 'Notifications',
         }}

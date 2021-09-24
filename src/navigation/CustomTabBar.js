@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     zIndex: 10,
     top: getSize.s(-7),
-    right: getSize.s(21),
+    right: getSize.s(25),
   },
   badgeStyle: {borderColor: '#fff', borderWidth: 1},
 });

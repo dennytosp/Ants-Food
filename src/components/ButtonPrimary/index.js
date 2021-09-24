@@ -6,19 +6,28 @@ import styles from './styles';
 const ButtonPrimary = ({
   textButton,
   handleOnpressButton,
-  checkNotPrimary,
+  backgroundColor,
+  textColors,
+  width,
+  marginHorizontal,
+  marginTop,
+  marginBottom,
   style,
 }) => {
   return (
     <Pressable
       onPress={handleOnpressButton}
       style={{
-        backgroundColor: checkNotPrimary ? COLORS.gray00 : COLORS.primary,
+        backgroundColor: backgroundColor ? backgroundColor : COLORS.black,
+        width: width,
+        marginHorizontal: marginHorizontal ? 0 : 15,
+        marginTop: marginTop,
+        marginBottom: marginBottom,
         ...styles.wrapperButton,
       }}>
       <Text
         style={{
-          color: checkNotPrimary ? COLORS.dark : COLORS.white,
+          color: textColors ? textColors : COLORS.white,
           ...styles.txtButton,
         }}>
         {textButton}

@@ -1,5 +1,6 @@
 import {Dimensions} from 'react-native';
 const {width, height} = Dimensions.get('window');
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 export const COLORS = {
   black: '#303030',
@@ -7,13 +8,16 @@ export const COLORS = {
   dark: '#000',
 
   light: '#606060',
+  light01: '#909090',
+  light02: '#808080',
 
   gray00: '#ECF0F1',
   gray01: '#F6F6F6',
   gray02: '#E8E8E8',
   gray03: '#BDBDBD',
   gray04: '#666666',
-
+  gray05: '#E0E0E0',
+  gray06: '#F2F2F2',
 };
 
 export const SIZES = {
@@ -24,6 +28,7 @@ export const SIZES = {
 };
 
 export const FONTS = {
+  //Primary Fonts
   black: 'NunitoSans-Black',
   bold: 'NunitoSans-Bold',
   extraBold: 'NunitoSans-ExtraBold',
@@ -32,7 +37,15 @@ export const FONTS = {
   light: 'NunitoSans-Light',
   regular: 'NunitoSans-Regular',
   semiBold: 'NunitoSans-SemiBold',
+
+  //Gelasio Fonts
+  gelasioBold: 'Gelasio-Bold',
+  gelasioItalic: 'Gelasio-Italic',
+  gelasioMedium: 'Gelasio-Medium',
+  gelasioRegular: 'Gelasio-Regular',
+  gelasioSemiBold: 'Gelasio-SemiBold',
 };
+
 
 const theme = {COLORS, SIZES, FONTS};
 export default theme;

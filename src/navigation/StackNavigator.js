@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {common, authen} from './../screens';
+import {common, authen, inside} from './../screens';
 import {StatusBar} from 'react-native';
 
 import {StackStep} from './';
@@ -69,6 +69,12 @@ const MainStackNavigator = () => {
           <Stack.Screen name="Saved" component={common.Saved} />
           <Stack.Screen name="Notifications" component={common.Notifications} />
           <Stack.Screen name="Profile" component={common.Profile} />
+          
+          <Stack.Screen name="Details" component={inside.Details} />
+          <Stack.Screen name="Cart" component={inside.Cart} />
+          <Stack.Screen name="Checkout" component={inside.Checkout} />
+          <Stack.Screen name="Purchase" component={inside.Purchase} />
+          
         </>
       </Stack.Navigator>
     </>

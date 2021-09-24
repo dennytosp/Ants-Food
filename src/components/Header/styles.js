@@ -1,47 +1,29 @@
-import {getSize} from '../../utils/reponsive';
 import {StyleSheet} from 'react-native';
 import {COLORS} from '../../constants';
+import {getSize} from '../../utils/reponsive';
 
-export default StyleSheet.create({
-  iconback: {
-    width: getSize.s(20),
-    height: getSize.s(20),
-    resizeMode: 'contain',
-  },
-  containerStyle: {
-    position: 'absolute',
-    zIndex: 1,
-    top: getSize.m(-7),
-    right: getSize.m(-10),
-  },
-  iconcard: {
-    width: getSize.s(24),
-    height: getSize.s(24),
-    tintColor: COLORS.white,
-  },
-  iconSearch: {
-    width: getSize.s(20),
-    height: getSize.s(20),
-    tintColor: COLORS.placeholder,
-  },
-  box: backgroundColorbox => ({
-    flex: 1,
+export const styles = StyleSheet.create({
+  wrapperHeadering: {
     flexDirection: 'row',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: backgroundColorbox,
-    borderRadius: 5,
-    paddingHorizontal: 12,
-    height: getSize.m(40),
-  }),
-  container: (top, backgroundColor) => ({
-    paddingTop: top + 10,
-    paddingHorizontal: getSize.m(12),
-    backgroundColor: backgroundColor,
-  }),
-
-  backgroundColorsmoke: backgroundsmoke => ({
-    backgroundColor: backgroundsmoke,
-    height: getSize.m(0.5),
-  }),
-  border: {borderBottomColor: COLORS.smoke, borderBottomWidth: 0.5},
+    marginBottom: 30,
+  },
+  wrapperGoBack: {
+    backgroundColor: COLORS.white,
+    borderRadius: 12,
+    width: getSize.s(50),
+    height: getSize.s(50),
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: COLORS.black,
+    shadowOffset: {
+      width: 10,
+      height: 5,
+    },
+    shadowOpacity: 0.3,
+    shadowRadius: 10,
+    elevation: 6,
+  },
 });
+export default styles;

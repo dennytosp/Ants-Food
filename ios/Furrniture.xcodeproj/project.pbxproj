@@ -42,6 +42,14 @@
 		65508B24E7754A32B3AB0647 /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9311B836525496B8388E470 /* NunitoSans-Regular.ttf */; };
 		16749AFA3884477EAAB25948 /* NunitoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD8A5551AF40FBAF4B4EF1 /* NunitoSans-SemiBold.ttf */; };
 		236EDB23B88E4E648B95568B /* NunitoSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403EF2C3E68242BDA0E64961 /* NunitoSans-SemiBoldItalic.ttf */; };
+		F20150FDB31742B094A5509D /* Gelasio-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5344226C2DD34DEABCC47DC5 /* Gelasio-Bold.ttf */; };
+		23E03CA6EAC4411AAD8C90FC /* Gelasio-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE7E13810B72409990152C44 /* Gelasio-BoldItalic.ttf */; };
+		CD9F27EF1B214A73BB17B019 /* Gelasio-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A85A520863224DC89CD8B378 /* Gelasio-Italic.ttf */; };
+		8DF6098765E740AFB04C2389 /* Gelasio-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9321BDDB611141C382999B41 /* Gelasio-Medium.ttf */; };
+		AF534135B12340FAA5C5BEA6 /* Gelasio-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D27CA41713B14700A484B366 /* Gelasio-MediumItalic.ttf */; };
+		51AC9FB0E68D4264BA2A4602 /* Gelasio-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 092E0772F5DC41C6B417BF0C /* Gelasio-Regular.ttf */; };
+		4B0BF68B06BB47BBA4315156 /* Gelasio-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 722328F9BDE34D81BD456261 /* Gelasio-SemiBold.ttf */; };
+		9E8D964E91994DBA8A4B06F4 /* Gelasio-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BE3DFDBAF1D4E81930DCC0F /* Gelasio-SemiBoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +104,14 @@
 		D9311B836525496B8388E470 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; name = "NunitoSans-Regular.ttf"; path = "../src/assets/fonts/NunitoSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		39CD8A5551AF40FBAF4B4EF1 /* NunitoSans-SemiBold.ttf */ = {isa = PBXFileReference; name = "NunitoSans-SemiBold.ttf"; path = "../src/assets/fonts/NunitoSans-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		403EF2C3E68242BDA0E64961 /* NunitoSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "NunitoSans-SemiBoldItalic.ttf"; path = "../src/assets/fonts/NunitoSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5344226C2DD34DEABCC47DC5 /* Gelasio-Bold.ttf */ = {isa = PBXFileReference; name = "Gelasio-Bold.ttf"; path = "../src/assets/fonts/Gelasio-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FE7E13810B72409990152C44 /* Gelasio-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Gelasio-BoldItalic.ttf"; path = "../src/assets/fonts/Gelasio-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A85A520863224DC89CD8B378 /* Gelasio-Italic.ttf */ = {isa = PBXFileReference; name = "Gelasio-Italic.ttf"; path = "../src/assets/fonts/Gelasio-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9321BDDB611141C382999B41 /* Gelasio-Medium.ttf */ = {isa = PBXFileReference; name = "Gelasio-Medium.ttf"; path = "../src/assets/fonts/Gelasio-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D27CA41713B14700A484B366 /* Gelasio-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Gelasio-MediumItalic.ttf"; path = "../src/assets/fonts/Gelasio-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		092E0772F5DC41C6B417BF0C /* Gelasio-Regular.ttf */ = {isa = PBXFileReference; name = "Gelasio-Regular.ttf"; path = "../src/assets/fonts/Gelasio-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		722328F9BDE34D81BD456261 /* Gelasio-SemiBold.ttf */ = {isa = PBXFileReference; name = "Gelasio-SemiBold.ttf"; path = "../src/assets/fonts/Gelasio-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8BE3DFDBAF1D4E81930DCC0F /* Gelasio-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Gelasio-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Gelasio-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +234,14 @@
 				D9311B836525496B8388E470 /* NunitoSans-Regular.ttf */,
 				39CD8A5551AF40FBAF4B4EF1 /* NunitoSans-SemiBold.ttf */,
 				403EF2C3E68242BDA0E64961 /* NunitoSans-SemiBoldItalic.ttf */,
+				5344226C2DD34DEABCC47DC5 /* Gelasio-Bold.ttf */,
+				FE7E13810B72409990152C44 /* Gelasio-BoldItalic.ttf */,
+				A85A520863224DC89CD8B378 /* Gelasio-Italic.ttf */,
+				9321BDDB611141C382999B41 /* Gelasio-Medium.ttf */,
+				D27CA41713B14700A484B366 /* Gelasio-MediumItalic.ttf */,
+				092E0772F5DC41C6B417BF0C /* Gelasio-Regular.ttf */,
+				722328F9BDE34D81BD456261 /* Gelasio-SemiBold.ttf */,
+				8BE3DFDBAF1D4E81930DCC0F /* Gelasio-SemiBoldItalic.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -343,6 +367,14 @@
 				65508B24E7754A32B3AB0647 /* NunitoSans-Regular.ttf in Resources */,
 				16749AFA3884477EAAB25948 /* NunitoSans-SemiBold.ttf in Resources */,
 				236EDB23B88E4E648B95568B /* NunitoSans-SemiBoldItalic.ttf in Resources */,
+				F20150FDB31742B094A5509D /* Gelasio-Bold.ttf in Resources */,
+				23E03CA6EAC4411AAD8C90FC /* Gelasio-BoldItalic.ttf in Resources */,
+				CD9F27EF1B214A73BB17B019 /* Gelasio-Italic.ttf in Resources */,
+				8DF6098765E740AFB04C2389 /* Gelasio-Medium.ttf in Resources */,
+				AF534135B12340FAA5C5BEA6 /* Gelasio-MediumItalic.ttf in Resources */,
+				51AC9FB0E68D4264BA2A4602 /* Gelasio-Regular.ttf in Resources */,
+				4B0BF68B06BB47BBA4315156 /* Gelasio-SemiBold.ttf in Resources */,
+				9E8D964E91994DBA8A4B06F4 /* Gelasio-SemiBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

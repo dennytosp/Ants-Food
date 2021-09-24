@@ -1,38 +1,50 @@
-import React, {useState} from 'react';
-import {Pressable, View, Image, Text} from 'react-native';
+import React from 'react';
+import {Pressable, View, Text, ImageBackground} from 'react-native';
 import {useNavigation} from '@react-navigation/core';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import styles from './styles';
-import {FONTS, COLORS} from '../../../constants/theme';
+import {photos} from '../../../assets';
 
 const Welcome = () => {
   const {top} = useSafeAreaInsets();
   const navigation = useNavigation();
 
-  const _renderHeader = () => {
+  const _renderBackground = () => {
     return (
-      <View style={styles.wrapperHeader}>
-        <Text style={{fontFamily: FONTS.regular, textAlign: 'justify', color: COLORS.black}}>
-          Minimal Stand is made of by natural wood. The design that is very
-          simple and minimal. This is truly one of the best furnitures in any
-          family for now. With 3 different colors, you can easily select the
-          best match for your home.
-        </Text>
+      <View style={styles.wrapperBackground}>
+        <ImageBackground source={photos.welcome} style={styles.imgBackground} />
       </View>
     );
   };
 
   const _renderCenter = () => {
-    return <View style={styles.wrapperCenter}></View>;
+    return (
+      <View style={{marginTop: top + 200, ...styles.wrapperCenter}}>
+        <Text style={styles.title01}>MAKE YOUR</Text>
+        <Text style={styles.title02}>HOME BEAUTIFUL</Text>
+        <Text style={styles.subTitle}>
+          The best simple place where you discover most wonderful furnitures and
+          make your home beautiful
+        </Text>
+      </View>
+    );
   };
 
   const _renderFooter = () => {
-    return <View style={styles.wrapperFooter}></View>;
+    return (
+      <View style={styles.wrapperFooter}>
+        <Pressable
+          onPress={() => navigation.navigate('Login')}
+          style={styles.wrapperButton}>
+          <Text style={styles.txtStarted}>Get Started</Text>
+        </Pressable>
+      </View>
+    );
   };
 
   return (
     <View style={styles.container}>
-      <_renderHeader />
+      <_renderBackground />
       <_renderCenter />
       <_renderFooter />
     </View>
