@@ -12,11 +12,19 @@ const Header = ({
   rightIcon,
   handleOnpressLeft,
   handleOnpressRight,
+  paddingHorizontal,
+  marginBottom,
   style,
 }) => {
   const {top} = useSafeAreaInsets();
   return (
-    <View style={{marginTop: top, ...styles.wrapperHeadering}}>
+    <View
+      style={{
+        marginTop: top,
+        marginBottom: marginBottom ? marginBottom : 30,
+        paddingHorizontal: paddingHorizontal,
+        ...styles.wrapperHeadering,
+      }}>
       <Pressable onPress={handleOnpressLeft}>
         {leftIcon ? (
           leftIcon
@@ -31,7 +39,7 @@ const Header = ({
       >
         <Texting
           text={title}
-          fontSize={20}
+          fontSize={18}
           fonts={FONTS.gelasioBold}
           colors={COLORS.black}
         />

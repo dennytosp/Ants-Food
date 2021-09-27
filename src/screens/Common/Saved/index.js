@@ -1,21 +1,12 @@
-import React, {useState} from 'react';
-import {
-  FlatList,
-  Pressable,
-  View,
-  Image,
-  Text,
-  ScrollView,
-  StyleSheet,
-} from 'react-native';
+import React from 'react';
+import {FlatList, Pressable, View, Image, ScrollView} from 'react-native';
 import {useNavigation} from '@react-navigation/core';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import styles from './styles';
-import {Search, Bag, Carted, Edit, Remove, BagBlack} from '../../../assets/svg';
+import {Search, Carted, Remove, BagBlack} from '../../../assets/svg';
 import {ButtonPrimary, Header, Texting} from '../../../components';
 import {COLORS, FONTS} from '../../../constants';
-import {DATA_CART, DATA_CATEG, DATA_PRODUCT} from '../../../assets/data';
-import {photos} from '../../../assets';
+import {DATA_CART} from '../../../assets/data';
 
 const Saved = () => {
   const {top} = useSafeAreaInsets();
@@ -36,7 +27,9 @@ const Saved = () => {
     return (
       <View style={styles.wrapperCart}>
         <View style={styles.wrapperSectionCart}>
-          <Pressable style={styles.wrapperImageCart}>
+          <Pressable
+            style={styles.wrapperImageCart}
+            onPress={() => navigation.navigate('Details', {item})}>
             <Image source={item.image} style={styles.imageContent} />
           </Pressable>
 
@@ -64,14 +57,12 @@ const Saved = () => {
 
   const _renderFlatCarts = () => {
     return (
-      <View style={{marginBottom: 0 * 1}}>
-        <FlatList
-          showsVerticalScrollIndicator={false}
-          data={DATA_CART}
-          renderItem={_renderCart}
-          keyExtractor={item => item.id.toString()}
-        />
-      </View>
+      <FlatList
+        showsVerticalScrollIndicator={false}
+        data={DATA_CART}
+        renderItem={_renderCart}
+        keyExtractor={item => item.id.toString()}
+      />
     );
   };
 

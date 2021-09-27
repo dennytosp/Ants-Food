@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {FlatList, Pressable, View, Image, Text, ScrollView} from 'react-native';
+import React from 'react';
+import {FlatList, Pressable, View, Image, ScrollView} from 'react-native';
 import {useNavigation} from '@react-navigation/core';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import styles from './styles';
@@ -7,7 +7,6 @@ import {Search, Carted, Bag} from '../../../assets/svg';
 import {Texting} from '../../../components';
 import {COLORS, FONTS} from '../../../constants';
 import {DATA_CATEG, DATA_PRODUCT} from '../../../assets/data';
-import {photos} from '../../../assets';
 
 const Home = () => {
   const {top} = useSafeAreaInsets();

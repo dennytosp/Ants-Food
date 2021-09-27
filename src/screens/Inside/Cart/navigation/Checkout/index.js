@@ -1,7 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Pressable, View} from 'react-native';
 import {useNavigation} from '@react-navigation/core';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import styles from './styles';
 import {DeliveryDHL, MasterCard} from '../../../../../assets/svg';
 import {
@@ -24,7 +23,14 @@ const Checkout = () => {
   const _renderShippingAddress = () => {
     return (
       <View style={styles.wrapperShipping}>
-        <Editing title="Shipping Address" />
+        <Editing
+          title="Shipping Address"
+          handleOnpress={() =>
+            navigation.navigate('AddShippingAddress', {
+              editParam: 'EDIT SHIPPING ADDRESS',
+            })
+          }
+        />
         <View style={styles.wrapperCard}>
           <Texting
             text="Bruno Fernandes"

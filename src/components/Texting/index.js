@@ -11,8 +11,14 @@ const Texting = ({
   textAlign,
   lineHeight,
   marginTop,
+  marginLeft,
   marginBottom,
   marginHorizontal,
+  marginVertical,
+  zIndex,
+  flexWrap,
+  flex,
+  alignItems,
   style,
 }) => {
   return (
@@ -25,8 +31,14 @@ const Texting = ({
           textAlign: textAlign,
           lineHeight: lineHeight,
           marginTop: marginTop,
+          marginLeft: marginLeft,
           marginBottom: marginBottom,
           marginHorizontal: marginHorizontal,
+          marginVertical: marginVertical,
+          zIndex: zIndex,
+          flexWrap: flexWrap,
+          alignItems: alignItems,
+          flex: flex,
           ...styles.textingDefault,
         }}>
         {text}

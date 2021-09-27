@@ -1,25 +1,11 @@
-import React, {useState} from 'react';
-import {
-  FlatList,
-  Pressable,
-  View,
-  Image,
-  Text,
-  ScrollView,
-  StyleSheet,
-} from 'react-native';
+import React from 'react';
+import {Pressable, View} from 'react-native';
 import {useNavigation} from '@react-navigation/core';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import styles from './styles';
 import {PurchaseSuccess} from '../../../../../assets/svg';
-import {
-  ButtonPrimary,
-  Editing,
-  Header,
-  Texting,
-} from '../../../../../components';
+import {ButtonPrimary, Texting} from '../../../../../components';
 import {COLORS, FONTS} from '../../../../../constants';
-import {photos} from '../../../../../assets';
 
 const Purchase = () => {
   const {top} = useSafeAreaInsets();
@@ -32,6 +18,7 @@ const Purchase = () => {
           text="SUCCESS!"
           fontSize={36}
           fonts={FONTS.gelasioBold}
+          colors={COLORS.black}
           marginBottom={30}
         />
         <Pressable style={styles.wrapperImageCenter}>
@@ -59,7 +46,7 @@ const Purchase = () => {
         />
         <Pressable
           style={styles.wrapperButton}
-          onPress={() => navigation.navigate('Home')}>
+          onPress={() => navigation.navigate('Common')}>
           <Texting
             text="BACK TO HOME"
             fontSize={18}

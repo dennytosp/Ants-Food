@@ -19,8 +19,8 @@ export const styles = StyleSheet.create({
   },
   wrapperItemSelect: {
     backgroundColor: COLORS.gray06,
-    width: 44,
-    height: 44,
+    width: getSize.s(42),
+    height: getSize.s(42),
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 12,
@@ -38,8 +38,8 @@ export const styles = StyleSheet.create({
   },
   wrapperBag: {
     backgroundColor: COLORS.light01,
-    width: 30,
-    height: 30,
+    width: getSize.s(25),
+    height: getSize.s(25),
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 8,

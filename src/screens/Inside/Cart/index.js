@@ -1,25 +1,13 @@
 import React from 'react';
-import {
-  FlatList,
-  Pressable,
-  View,
-  Image,
-  ScrollView,
-} from 'react-native';
+import {FlatList, Pressable, View, Image, ScrollView} from 'react-native';
 import {useNavigation} from '@react-navigation/core';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import styles from './styles';
-import {
-  Remove,
-  Plus,
-  Less,
-} from '../../../assets/svg';
+import {Remove, Plus, Less} from '../../../assets/svg';
 import {ButtonPrimary, Header, Texting} from '../../../components';
 import {COLORS, FONTS} from '../../../constants';
 import {DATA_CART} from '../../../assets/data';
 
 const Cart = () => {
-  const {top} = useSafeAreaInsets();
   const navigation = useNavigation();
 
   const _renderHeader = () => {
@@ -32,7 +20,9 @@ const Cart = () => {
     return (
       <View style={styles.wrapperCart}>
         <View style={styles.wrapperSectionCart}>
-          <Pressable style={styles.wrapperImageCart}>
+          <Pressable
+            style={styles.wrapperImageCart}
+            onPress={() => navigation.navigate('Details', {item})}>
             <Image source={item.image} style={styles.imageContent} />
           </Pressable>
 
@@ -77,14 +67,12 @@ const Cart = () => {
 
   const _renderFlatCarts = () => {
     return (
-      <View style={{marginBottom: 0 * 1}}>
-        <FlatList
-          showsVerticalScrollIndicator={false}
-          data={DATA_CART}
-          renderItem={_renderCart}
-          keyExtractor={item => item.id.toString()}
-        />
-      </View>
+      <FlatList
+        showsVerticalScrollIndicator={false}
+        data={DATA_CART}
+        renderItem={_renderCart}
+        keyExtractor={item => item.id.toString()}
+      />
     );
   };
 
@@ -108,7 +96,12 @@ const Cart = () => {
             colors={COLORS.black}
           />
         </View>
-        <ButtonPrimary handleOnpressButton={() => navigation.navigate('Checkout')} textButton="CHECK OUT" marginHorizontal marginTop={15} />
+        <ButtonPrimary
+          handleOnpressButton={() => navigation.navigate('Checkout')}
+          textButton="CHECK OUT"
+          marginHorizontal
+          marginTop={15}
+        />
       </View>
     );
   };

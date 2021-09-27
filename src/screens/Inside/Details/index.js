@@ -82,13 +82,15 @@ const Details = ({route}) => {
             fonts={FONTS.bold}
           />
 
-          <View style={{marginHorizontal: 20}}>
+          <Pressable
+            style={{marginHorizontal: 20}}
+            onPress={() => navigation.navigate('Rating')}>
             <Texting
               text="(50 reviews)"
               colors={COLORS.light02}
               fonts={FONTS.semiBold}
             />
-          </View>
+          </Pressable>
         </View>
         <Texting
           textAlign="justify"
@@ -104,7 +106,9 @@ const Details = ({route}) => {
   const _renderFooter = () => {
     return (
       <View style={styles.wrapperFooter}>
-        <Pressable style={styles.wrapperSave} onPress={() => navigation.navigate('Saved')}>
+        <Pressable
+          style={styles.wrapperSave}
+          onPress={() => navigation.navigate('Saved')}>
           <Save />
         </Pressable>
 

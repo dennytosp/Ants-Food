@@ -10,6 +10,10 @@ import {COLORS, FONTS} from '../../../constants';
 const Login = () => {
   const {top} = useSafeAreaInsets();
   const navigation = useNavigation();
+  const [activeInput, setActiveInput] = useState(null);
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+  const [showPassword, setShowPassword] = useState(false);
 
   const _renderHeader = () => {
     return (

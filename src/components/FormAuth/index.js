@@ -8,8 +8,9 @@ import styles from './styles';
 const FormAuth = ({
   text,
   onFocus,
+  onPrimary,
   placeholder,
-  onChange,
+  onChangeText,
   keyboardType,
   secureTextEntry,
   eye,
@@ -18,7 +19,7 @@ const FormAuth = ({
   style,
 }) => {
   return (
-    <View style={{marginTop: inputFirst ? 45 : 0, ...styles.wrapperInput}}>
+    <View style={{...styles.wrapperInput(inputFirst)}}>
       <Texting text={text} colors={COLORS.light01} />
       <View style={{flexDirection: 'row'}}>
         <TextInput
@@ -26,7 +27,7 @@ const FormAuth = ({
           onFocus={onFocus}
           placeholder={placeholder}
           placeholderTextColor={COLORS.black}
-          onChange={onChange}
+          onChangeText={onChangeText}
           keyboardType={keyboardType}
           secureTextEntry={secureTextEntry}
         />
@@ -39,7 +40,10 @@ const FormAuth = ({
       </View>
 
       <View
-        style={{marginBottom: checkEnd ? 45 : 30, ...styles.lineInput}}></View>
+        style={{
+          ...style,
+          ...styles.lineInput(onPrimary, checkEnd),
+        }}></View>
     </View>
   );
 };

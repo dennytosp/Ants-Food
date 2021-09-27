@@ -1,37 +1,38 @@
 import {StyleSheet} from 'react-native';
-import {COLORS} from '../../../constants';
+import {COLORS, FONTS} from '../../../constants';
 
 const styles = StyleSheet.create({
   slide: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: COLORS.black,
+    backgroundColor: COLORS.white,
   },
   image: {
-    marginVertical: 30,
+    marginBottom: 40,
   },
   title: {
+    fontFamily: FONTS.gelasioSemiBold,
     fontSize: 24,
     fontWeight: '700',
-    color: COLORS.white,
+    color: COLORS.black,
     lineHeight: 36,
     textAlign: 'center',
-    marginHorizontal: 60,
+    marginHorizontal: 40,
+    marginBottom: 25,
   },
   text: {
+    fontFamily: FONTS.regular,
     fontSize: 14,
-    color: COLORS.white,
+    color: COLORS.black,
     textAlign: 'center',
     marginHorizontal: 60,
-    marginTop: 20,
     lineHeight: 16.41,
   },
   dotStyle: {
-    backgroundColor: COLORS.black,
+    backgroundColor: COLORS.gray05,
   },
   activeDotStyle: {
-    backgroundColor: COLORS.white,
+    backgroundColor: COLORS.black,
   },
   rightTextWrapper: {
     width: 40,
@@ -42,8 +43,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   rightText: {
-    color: COLORS.white,
+    color: COLORS.black,
     fontSize: 14,
+    fontFamily: FONTS.semiBold,
   },
   leftTextWrapper: {
     width: 40,
@@ -54,8 +56,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   leftText: {
-    color: COLORS.white,
+    color: COLORS.black,
     fontSize: 14,
+    fontFamily: FONTS.semiBold,
   },
   doneButtonWrapper: {
     flex: 1,
@@ -66,9 +69,10 @@ const styles = StyleSheet.create({
     marginRight: -0,
   },
   doneButtonText: {
+    fontFamily: FONTS.semiBold,
     fontSize: 14,
     textAlign: 'center',
-    color: COLORS.black,
+    color: COLORS.black01,
   },
 });
 

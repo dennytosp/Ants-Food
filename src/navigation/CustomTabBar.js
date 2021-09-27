@@ -78,7 +78,7 @@ const CustomTabBar = ({state, descriptors, navigation}) => {
                 containerStyle={styles.containerStyle}
                 badgeStyle={styles.badgeStyle}
                 textProps={{allowFontScaling: false}}
-                value="1"
+                value="7"
               />
             )}
             <Image

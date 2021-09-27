@@ -69,12 +69,30 @@ const MainStackNavigator = () => {
           <Stack.Screen name="Saved" component={common.Saved} />
           <Stack.Screen name="Notifications" component={common.Notifications} />
           <Stack.Screen name="Profile" component={common.Profile} />
-          
+
           <Stack.Screen name="Details" component={inside.Details} />
           <Stack.Screen name="Cart" component={inside.Cart} />
           <Stack.Screen name="Checkout" component={inside.Checkout} />
           <Stack.Screen name="Purchase" component={inside.Purchase} />
-          
+          <Stack.Screen name="Rating" component={inside.Rating} />
+
+          <Stack.Screen name="MyOrders" component={inside.MyOrders} />
+          <Stack.Screen
+            name="ShippingAddress"
+            component={inside.ShippingAddress}
+          />
+          <Stack.Screen name="PaymentMethod" component={inside.PaymentMethod} />
+          <Stack.Screen name="MyReviews" component={inside.MyReviews} />
+          <Stack.Screen name="Settings" component={inside.Settings} />
+
+          <Stack.Screen
+            name="AddShippingAddress"
+            component={inside.AddShippingAddress}
+          />
+          <Stack.Screen
+            name="AddPaymentMethod"
+            component={inside.AddPaymentMethod}
+          />
         </>
       </Stack.Navigator>
     </>

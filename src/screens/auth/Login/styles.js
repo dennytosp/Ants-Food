@@ -63,5 +63,11 @@ export const styles = StyleSheet.create({
     marginBottom: 45,
     marginTop: 30,
   },
+  lineActive: {
+    backgroundColor: COLORS.green,
+  },
+  lineNotActive: {
+    backgroundColor: '#E0E0E0',
+  },
 });
 export default styles;

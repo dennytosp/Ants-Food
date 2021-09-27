@@ -6,8 +6,6 @@ export const styles = StyleSheet.create({
   wrapperTitle: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 10,
   },
 });
 export default styles;

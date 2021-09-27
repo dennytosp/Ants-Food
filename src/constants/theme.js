@@ -4,14 +4,19 @@ import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 export const COLORS = {
   black: '#303030',
+  black01: '#222222',
   white: '#FFFFFF',
   dark: '#000',
 
+  green: '#2AA952',
+  red: '#EB001B',
+  yellow: '#FFCC00',
+  
   light: '#606060',
   light01: '#909090',
   light02: '#808080',
 
-  gray00: '#ECF0F1',
+  gray00: '#F0F0F0',
   gray01: '#F6F6F6',
   gray02: '#E8E8E8',
   gray03: '#BDBDBD',
