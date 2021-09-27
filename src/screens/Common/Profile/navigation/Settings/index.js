@@ -1,43 +1,11 @@
-import React, {useState} from 'react';
-import {
-  View,
-  Pressable,
-  Image,
-  FlatList,
-  TextInput,
-  Platform,
-  ScrollView,
-} from 'react-native';
+import React from 'react';
+import {View, ScrollView} from 'react-native';
 import {useNavigation} from '@react-navigation/core';
 import styles from './styles';
-import {
-  CardRow,
-  Editing,
-  Header,
-  Inputing,
-  Texting,
-} from '../../../../../components';
-import {
-  ForwardGrey,
-  Logout,
-  Notifications,
-  Search,
-} from '../../../../../assets/svg';
-import {COLORS, FONTS} from '../../../../../constants';
-import {photos} from '../../../../../assets';
-import {DATA_EVENT_PROFILE} from '../../../../../assets/data';
-import {getSize} from '../../../../../utils/reponsive';
-import {Switch} from 'react-native-elements/dist/switch/switch';
+import {CardRow, Editing, Header, Inputing} from '../../../../../components';
 
 const Settings = () => {
   const navigation = useNavigation();
-  const [isSwitchEnabled, setSwitch] = useState(true);
-
-  const thumbColorOn = Platform.OS === 'android' ? COLORS.white : COLORS.white;
-  const thumbColorOff = Platform.OS === 'android' ? COLORS.white : COLORS.white;
-  const trackColorOn = Platform.OS === 'android' ? COLORS.green : COLORS.green;
-  const trackColorOff =
-    Platform.OS === 'android' ? COLORS.gray02 : COLORS.gray02;
 
   const _renderHeader = () => {
     return (

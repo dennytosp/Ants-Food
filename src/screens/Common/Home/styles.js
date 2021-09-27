@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   wrapperItemSelect: {
-    backgroundColor: COLORS.gray06,
+    
     width: getSize.s(42),
     height: getSize.s(42),
     alignItems: 'center',

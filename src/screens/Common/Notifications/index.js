@@ -46,7 +46,7 @@ const Notifications = () => {
         <View style={styles.wrapperStatus}>
           <Texting
             text={item.status}
-            colors={item.status == 'NEW' ? '#27AE60' : '#EB5757'}
+            colors={item.status == 'NEW' ? COLORS.green : '#EB5757'}
             fonts={FONTS.extraBold}
           />
         </View>

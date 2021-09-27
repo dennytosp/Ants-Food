@@ -29,6 +29,7 @@ export const styles = StyleSheet.create({
     marginTop: 10,
     height: 1,
     backgroundColor: COLORS.gray00,
+    marginHorizontal: 15,
   },
   wrapperContent: {
     marginTop: 45,

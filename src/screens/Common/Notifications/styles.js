@@ -36,8 +36,9 @@ export const styles = StyleSheet.create({
   lines: {
     borderRadius: 10,
     marginTop: 15,
-    height: 1,
+    height: 2 / 2,
     backgroundColor: COLORS.gray00,
+    marginHorizontal: 15,
   },
 });
 export default styles;

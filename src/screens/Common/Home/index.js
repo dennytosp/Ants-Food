@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {FlatList, Pressable, View, Image, ScrollView} from 'react-native';
 import {useNavigation} from '@react-navigation/core';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
@@ -11,6 +11,18 @@ import {DATA_CATEG, DATA_PRODUCT} from '../../../assets/data';
 const Home = () => {
   const {top} = useSafeAreaInsets();
   const navigation = useNavigation();
+
+  // const [status, setStatus] = useState('All');
+  // const [data, setData] = useState(DATA_PRODUCT);
+
+  // const setStatusFilter = status => {
+  //   if (status != 'All') {
+  //     setData([...DATA_PRODUCT.filter(e => e.status == status)]);
+  //   } else {
+  //     setData(DATA_PRODUCT);
+  //   }
+  //   setStatus(status);
+  // };
 
   const _renderHeader = () => {
     return (
@@ -42,8 +54,18 @@ const Home = () => {
   const _renderCategories = ({item, index}) => {
     return (
       <View
-        style={{marginLeft: index === 0 ? 0 : 25, ...styles.wrapperCategories}}>
-        <Pressable style={styles.wrapperItemSelect}>{item.image}</Pressable>
+        style={{
+          marginLeft: index === 0 ? 0 : 25,
+          ...styles.wrapperCategories,
+        }}>
+        <Pressable
+          // onPress={() => setStatusFilter(item.status)}
+          style={{
+            backgroundColor: index === 0 ? COLORS.black : COLORS.gray06,
+            ...styles.wrapperItemSelect,
+          }}>
+          {item.image}
+        </Pressable>
         <Texting text={item.name} colors={COLORS.light02} />
       </View>
     );

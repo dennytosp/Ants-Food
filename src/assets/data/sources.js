@@ -35,31 +35,37 @@ export const DATA_CATEG = [
     id: '1',
     image: Popular,
     name: 'Popular',
+    status: 'Popular',
   },
   {
     id: '2',
     image: Chair,
     name: 'Chair',
+    status: 'Chair',
   },
   {
     id: '3',
     image: Table,
     name: 'Table',
+    status: 'Table',
   },
   {
     id: '4',
     image: Armchair,
     name: 'Armchair',
+    status: 'Armchair',
   },
   {
     id: '5',
     image: Bed,
     name: 'Bed',
+    status: 'Bed',
   },
   {
     id: '6',
     image: Lamb,
     name: 'Lamb',
+    status: 'Lamb',
   },
 ];
 
@@ -69,7 +75,7 @@ export const DATA_PRODUCT = [
     image: photos.product01,
     name: 'Black Simple Lamp',
     price: '$ 12.00',
-    name: 'Popular',
+    status: 'Popular',
   },
   {
     id: '2',
