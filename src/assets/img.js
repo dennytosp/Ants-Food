@@ -16,6 +16,8 @@ import product03 from './images/photos/furrniture/product03.png';
 import product04 from './images/photos/furrniture/product04.png';
 import product05 from './images/photos/furrniture/product05.png';
 import user from './images/photos/furrniture/user.jpg';
+import user02 from './images/photos/furrniture/user02.jpg';
+import user03 from './images/photos/furrniture/user03.jpg';
 
 export const photos = {
   onboard01,
@@ -28,6 +30,8 @@ export const photos = {
   product04,
   product05,
   user,
+  user02,
+  user03,
 };
 export const icons = {
   // icons_bottom_bar

@@ -9,12 +9,12 @@ import {
   Lamb,
   Method01,
   Method02,
+  MasterCard,
 } from '../svg';
-import {React} from 'react';
 
 export const ONBOARD_DATA = [
   {
-    title: 'Welcome to Surf.',
+    title: 'Welcome to Gonp.',
     text: 'I provide essential stuff for your ui designs every tuesday!.',
     image: photos.onboard01,
   },
@@ -224,8 +224,8 @@ export const DATA_NOTIFICATIONS = [
 export const DATA_REVIEWS = [
   {
     id: '1',
-    image: photos.user,
-    name: 'Bruno Fernandes',
+    image: photos.user02,
+    name: 'Nguyen Van Tam',
     time: '20/03/2020',
     content:
       'Nice Furniture with good delivery. The delivery time is very fast. Then products look like exactly the picture in the app. Besides, color is also the same and quality is very good despite very cheap price',
@@ -233,15 +233,15 @@ export const DATA_REVIEWS = [
   {
     id: '2',
     image: photos.user,
-    name: 'Tracy Mosby',
+    name: 'Dinh Tien Phong',
     time: '15/04/2020',
     content:
       'Nice Furniture with good delivery. The delivery time is very fast. Then products look like exactly the picture in the app. Besides, color is also the same and quality is very good despite very cheap price',
   },
   {
     id: '3',
-    image: photos.user,
-    name: 'Vamos Vegas',
+    image: photos.user03,
+    name: 'Le Chi Vinh',
     time: '16/05/2020',
     content:
       'Nice Furniture with good delivery. The delivery time is very fast. Then products look like exactly the picture in the app. Besides, color is also the same and quality is very good despite very cheap price',
@@ -398,7 +398,7 @@ export const DATA_METHODS = [
   {
     id: '1',
     id_card: '* * * *  * * * *  * * * *  2108',
-    background: '#222222',
+    background: COLORS.black01,
     typeMethod: Method01,
     name: 'Dinh Tien Phong',
     time: '09/27',
@@ -407,7 +407,7 @@ export const DATA_METHODS = [
     id: '2',
     id_card: '* * * *  * * * *  * * * *  3947',
     background: '#7F886A',
-    typeMethod: Method02,
+    typeMethod: MasterCard,
     name: 'Jennyfer Doe',
     time: '05/23',
   },
@@ -415,7 +415,7 @@ export const DATA_METHODS = [
     id: '3',
     id_card: '* * * *  * * * *  * * * *  8574',
     background: '#002C3E',
-    typeMethod: Method01,
+    typeMethod: Method02,
     name: 'Javil Clean',
     time: '08/25',
   },

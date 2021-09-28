@@ -6,7 +6,6 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.white,
-    // paddingHorizontal: 15,
   },
   wrapperHeader: {
     marginBottom: 20,

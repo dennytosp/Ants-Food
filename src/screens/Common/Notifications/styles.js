@@ -9,8 +9,6 @@ export const styles = StyleSheet.create({
   },
   wrapperNotifications: {
     marginBottom: 15,
-    // backgroundColor: COLORS.gray00,
-    // paddingTop: 15,
   },
   boxNotifications: {
     flexDirection: 'row',

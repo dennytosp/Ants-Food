@@ -36,7 +36,7 @@ const Settings = () => {
   const _renderPassword = () => {
     return (
       <View style={styles.wrapperPersonalInfomartion}>
-        <Editing title="Password" size marginBottom={15} />
+        <Editing title="Security" size marginBottom={15} />
         <Inputing
           title="Password"
           placeholder="*************"

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {FlatList, Pressable, View, Image, ScrollView} from 'react-native';
 import {useNavigation} from '@react-navigation/core';
 import styles from './styles';
@@ -9,6 +9,7 @@ import {DATA_CART} from '../../../assets/data';
 
 const Cart = () => {
   const navigation = useNavigation();
+  const [count, setCount] = useState(1);
 
   const _renderHeader = () => {
     return (
@@ -30,17 +31,23 @@ const Cart = () => {
             <Texting text={item.name} fonts={FONTS.semiBold} marginBottom={5} />
             <View style={styles.wrapperFlexEndCart}>
               <View style={styles.wrapperFlexCenter}>
-                <Pressable style={styles.wrapperAmount}>
+                <Pressable
+                  onPress={() => setCount(count + 1)}
+                  style={styles.wrapperAmount}>
                   <Plus />
                 </Pressable>
                 <Texting
-                  text="01"
+                  text={count}
                   fontSize={18}
                   fonts={FONTS.semiBold}
                   colors={COLORS.black}
                   marginHorizontal={15}
                 />
-                <Pressable style={styles.wrapperAmount}>
+                <Pressable
+                  onPress={() =>
+                    count <= 1 ? setCount(1) : setCount(count - 1)
+                  }
+                  style={styles.wrapperAmount}>
                   <Less />
                 </Pressable>
               </View>

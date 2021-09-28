@@ -19,6 +19,8 @@ const Texting = ({
   flexWrap,
   flex,
   alignItems,
+  paddingHorizontal,
+  paddingVertical,
   style,
 }) => {
   return (
@@ -35,6 +37,8 @@ const Texting = ({
           marginBottom: marginBottom,
           marginHorizontal: marginHorizontal,
           marginVertical: marginVertical,
+          paddingHorizontal: paddingHorizontal,
+          paddingVertical: paddingVertical,
           zIndex: zIndex,
           flexWrap: flexWrap,
           alignItems: alignItems,

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Pressable, View, Image} from 'react-native';
 import {useNavigation} from '@react-navigation/core';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
@@ -12,6 +12,8 @@ const Details = ({route}) => {
   const {top} = useSafeAreaInsets();
   const navigation = useNavigation();
   const {item: receive} = route.params;
+  const [count, setCount] = useState(1);
+  const [sum, setSum] = useState();
 
   const _renderHeader = () => {
     return (
@@ -46,20 +48,24 @@ const Details = ({route}) => {
             fontSize={30}
           />
           <View style={styles.wrapperRightAmout}>
-            <Pressable style={styles.wrapperIconAmount}>
+            <Pressable
+              onPress={() => setCount(count + 1)}
+              style={styles.wrapperIconAmount}>
               <Plus />
             </Pressable>
 
             <View style={styles.wrapperTxtAmount}>
               <Texting
-                text="01"
+                text={count}
                 colors={COLORS.black}
                 fonts={FONTS.semiBold}
                 fontSize={18}
               />
             </View>
 
-            <Pressable style={styles.wrapperIconAmount}>
+            <Pressable
+              onPress={() => (count <= 1 ? setCount(1) : setCount(count - 1))}
+              style={styles.wrapperIconAmount}>
               <Less />
             </Pressable>
           </View>

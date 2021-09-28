@@ -44,6 +44,7 @@ const Checkout = () => {
           <Texting
             text="25 rue Robert Latouche, Nice, 06200, Côte D’azur, France"
             marginHorizontal={20}
+            textAlign="justify"
             lineHeight={25}
             marginBottom={15}
             colors={COLORS.light02}
@@ -56,8 +57,10 @@ const Checkout = () => {
   const _renderPayment = () => {
     return (
       <View style={styles.wrapperPayment}>
-        <Editing title="Payment" />
-
+        <Editing
+          title="Payment"
+          handleOnpress={() => navigation.navigate('PaymentMethod')}
+        />
         <View
           style={{
             flexDirection: 'row',
@@ -80,7 +83,11 @@ const Checkout = () => {
   const _renderDelivery = () => {
     return (
       <View style={styles.wrapperDelivery}>
-        <Editing title="Delivery method" size />
+        <Editing
+          title="Delivery method"
+          size
+          handleOnpress={() => console.log('Delivery method')}
+        />
 
         <View
           style={{

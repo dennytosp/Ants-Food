@@ -77,22 +77,14 @@ const MainStackNavigator = () => {
           <Stack.Screen name="Rating" component={inside.Rating} />
 
           <Stack.Screen name="MyOrders" component={inside.MyOrders} />
-          <Stack.Screen
-            name="ShippingAddress"
-            component={inside.ShippingAddress}
+          <Stack.Screen name="ShippingAddress" component={inside.ShippingAddress}
           />
           <Stack.Screen name="PaymentMethod" component={inside.PaymentMethod} />
           <Stack.Screen name="MyReviews" component={inside.MyReviews} />
           <Stack.Screen name="Settings" component={inside.Settings} />
 
-          <Stack.Screen
-            name="AddShippingAddress"
-            component={inside.AddShippingAddress}
-          />
-          <Stack.Screen
-            name="AddPaymentMethod"
-            component={inside.AddPaymentMethod}
-          />
+          <Stack.Screen name="AddShippingAddress" component={inside.AddShippingAddress}/>
+          <Stack.Screen name="AddPaymentMethod" component={inside.AddPaymentMethod}/>
         </>
       </Stack.Navigator>
     </>
